@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
+  <title>Registration with Bootstrap</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      min-height: 50px;
+      padding: 10px 15px;
+      font-size: 22px;
+      background-color: #222;
+      border-color: #080808;
+      color: white;
+      text-align: center;
+    }
+  </style>
+
 </head>
+
 <body style="height:1500px">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Use Case Two</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Use Case Two</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Main_page.html">Home</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="Records.html">Records</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="Main_page.html">Home</a></li>
-      <li><a href="Register.html">Register</a></li>
-      <li><a href="Records.html">Records</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container" style="margin-top:50px">
-  <h3>Fixed Navbar</h3>
-  <div class="row">
-    <div class="col-md-4">
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>    
-    </div>
-    <div class="col-md-4"> 
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-    </div>
-    <div class="col-md-4"> 
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-      <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p> 
-    </div>
-  </div>
-</div>
+  </nav>
 
-<h1>Scroll this page to see the effect</h1>
+  <div class="container" style="margin-top:50px">
+    <div class="row">
+      <div class="col-md-3">
+        <aside>
+          <h3>Favourite Quote</h3>
+          <div>
+          <p>Yesterday is HISTORY,<br /> Tomorrow is a MYSTERY, <br />But today is a GIFT. <br />That's why it's called as "PRESENT". <br /><span style="margin-left: 109px;">-Master Oogway</span></p>
+          </div>
+        </aside>
+      </div>
+      <div class="col-md-6">
+        <h1>Scroll this page to see the effect</h1>
+      </div>
+      <div class="col-md-3">
+        <aside>
+          <h1>My favourite CSS Trick</h1>
+          <p>You’ve probably used the visibility property hundreds of times. The most commonly used values are visible (the
+            default for all elements) and hidden, which makes an element disappear while allowing it to still occupy space
+            as if it was there (which is unlike display: none). A third and rarely used value for the visibility property
+            is collapse.</p><br />
+          <p>This works the same way as hidden on all elements except table rows, table row groups, table columns, and table
+            column groups. In the case of these table-based elements, a value of collapse is supposed to work similar to
+            display: none, so that the space occupied by the collapsed row/column can be occupied by other content. Unfortunately,
+            the way browsers handle collapse is not consistent.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <p>This is the fixed Footer</p>
+  </div>
 
 </body>
+
 </html>
